@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MediatR" Version="9.0.0" />
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+      <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.6.3" />
+      <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="87.0.4280.8800" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\TestProject.Application\TestProject.Application.csproj" />
+      <ProjectReference Include="..\TestProject.Infrastructure\TestProject.Infrastructure.csproj" />
+      <ProjectReference Include="..\TestProject.Persistance\TestProject.Persistance.csproj" />
+    </ItemGroup>
+
+</Project>

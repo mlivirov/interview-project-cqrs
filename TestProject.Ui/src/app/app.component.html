@@ -1,0 +1,18 @@
+<form (ngSubmit)="submit()" [formGroup]="searchForm">
+  <input type="text" formControlName="query">
+  <button type="submit">Search</button>
+</form>
+
+<div *ngIf="!isLoading && resultEntries">
+  <ol *ngIf="resultEntries.length">
+    <li *ngFor="let resultEntry of resultEntries">
+      <a [href]="resultEntry.link">{{resultEntry.title}}</a>
+    </li>
+  </ol>
+
+  <div *ngIf="!resultEntries.length">Sorry, nothing found...</div>
+</div>
+
+<div *ngIf="isLoading">
+  Loading... Please wait.
+</div>

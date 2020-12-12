@@ -1,0 +1,5 @@
+/TestProject/bin/*
+/TestProject/obj/*
+/**/bin/*
+/**/obj/*
+.idea/*
